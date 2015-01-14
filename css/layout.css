@@ -1,0 +1,550 @@
+/* [i] Main */
+
+body {
+    font-family: arial, sans-serif;
+    color: #333333;
+    min-width: 300px;
+    margin: 0;
+}
+
+#c24 .alertTest {
+    cursor: pointer;
+}
+
+#c24 .content {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#c24 .boxSizing {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#c24 .halfLeft {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#c24 .halfRight {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+/* [i] ClearFix */
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+/* [c] IE6 */
+* html .clearfix {
+    zoom: 1;
+}
+
+/* [c] IE7 */
+*:first-child+html .clearfix {
+    zoom: 1;
+}
+
+/* [i] Placeholder */
+
+::-moz-placeholder {
+    color: #d1d1d1;
+    font-style: italic;
+}
+
+::-webkit-input-placeholder {
+    color: #d1d1d1;
+    font-style: italic;
+}
+
+:-ms-input-placeholder {
+    color: #d1d1d1;
+    font-style: italic;
+}
+
+/* [i] Header */
+
+#c24 header {
+    position: relative;
+    background: #005ea8;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 10px 0 0 0 !important;
+}
+
+#c24 header .fa {
+    position: absolute;
+    cursor: pointer;
+}
+
+#c24 header .fa.fa-list {
+    font-size: 23px;
+    left: 10px;
+    top: 8px;
+}
+
+#c24 header .fa.fa-phone {
+    right: 10px;
+    top: 9px;
+    font-size: 23px;
+}
+
+/* [i] Product Info */
+
+#c24 #productInfo {
+    background: #ffffff;
+    height: 50px;
+    border-bottom: 1px solid #ebebeb;
+    margin: 0 0 -5px;
+}
+
+#c24 #productInfo h1 {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    margin: 8px 0 -12px;
+}
+
+#c24 #productInfo h2 {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+}
+
+#c24 #productInfo .bankLogo {
+    float: right;
+    background-image: url( "../images/consorsbank.png" );
+    width: 110px;
+    height: 29px;
+    margin: 10px 0 0 0;
+}
+
+/* [i] SSO */
+
+#c24 #sso {
+    background: #f7faff;
+    height: 75px;
+}
+
+#c24 #sso a.default,
+#c24 #sso button.default {
+    float: right;
+    margin: 15px 0 0 0;
+    width: 140px;
+}
+
+#c24 #sso span {
+    float: left;
+    margin: 25px 0 0 0;
+    font-weight: bold;
+    font-size: 15px;
+    color: #005ea8;
+}
+
+/* [i] Form Sections */
+
+#c24 section {
+    width: 100%;
+    height: auto;
+    margin: 20px 0 0 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#c24 section:first-of-type {
+    margin: 10px 0 0 0;
+}
+
+#c24 section .headline {
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    color: #005ea8;
+    margin: 0 0 3px 0;
+}
+
+#c24 section .layer {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 10px 0 3px 0;
+}
+
+#c24 section .layer:last-child {
+    margin: 10px 0 0 0;
+}
+
+#c24 section .layer .headline {
+    font-size: 12px;
+    font-weight: normal;
+    color: #999999;
+    width: 100%;
+}
+
+#c24 section .layer .headline.hidden {
+    visibility: hidden;
+}
+
+#c24 section .layer .left {
+    float: left;
+    width: 80%;
+}
+
+#c24 section .layer .right {
+    float: right;
+    width: 20%;
+}
+
+#c24 section .layer .helpTip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #cdcdcd;
+    color: #ffffff;
+    padding: 3px 7px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    -webkit-transition: background 0.2s;
+    cursor: pointer;
+}
+
+#c24 section .layer .helpTip:hover {
+    background: #adadad;
+}
+
+/* [i] Form Elements */
+
+/* [c] Layer Size */
+
+#c24 section .layer .size {
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#c24 section .layer .size.full {
+    float: none;
+    width: 100%;
+}
+
+#c24 section .layer .size.half {
+    width: 50%;
+}
+
+#c24 section .layer .size.sz35 {
+    width: 35%;
+}
+
+#c24 section .layer .size.sz40 {
+    width: 40%;
+}
+
+#c24 section .layer .size.sz60 {
+    width: 60%;
+}
+
+#c24 section .layer .size.sz65 {
+    width: 65%;
+}
+
+#c24 section .layer .size.sz65,
+#c24 section .layer .size.sz40,
+#c24 section .layer .size.half:first-child {
+    padding: 0 5px 0 0;
+}
+
+#c24 section .layer .size.sz35,
+#c24 section .layer .size.sz60,
+#c24 section .layer .size.half:last-child {
+    padding: 0 0 0 5px;
+}
+
+/* [c] Radio (2|Boxes) */
+
+#c24 section .layer .radio {
+    width: 100%;
+    height: 100%;
+}
+
+#c24 section .layer .radio .ele {
+    float: left;
+    width: 50%;
+    background: #ffffff;
+    border-radius: 4px;
+    color: #333333;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #dedede;
+    transition: color 0.5s, background 0.2s;
+    -moz-transition: color 0.5s, background 0.2s;
+    -webkit-transition: color 0.5s, background 0.2s;
+    cursor: pointer;
+}
+
+#c24 section .layer .radio .ele:hover,
+#c24 section .layer .radio .ele.active {
+    border: 1px solid #005ea8;
+    background: #005ea8;
+    color: #ffffff;
+}
+
+#c24 section .layer .radio .ele.active {
+    cursor: default;
+}
+
+#c24 section .layer .radio .ele:last-child {
+    margin: 0 0 0 -1px;
+}
+
+/* [c] Input Height */
+
+#c24 section .layer .input {
+    height: 45px;
+}
+
+/* [c] Dropdown Box */
+
+#c24 section .layer .input.dropdown {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    cursor: pointer;
+    border: 1px solid #dedede;
+    padding: 0 10px 0 5px;
+    border-radius: 4px;
+}
+
+#c24 section .layer .input.dropdown i.fa {
+    background: #ffffff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: #005ea8;
+    font-size: 25px;
+    height: 100%;
+    padding: 10px 0 0;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 17px;
+}
+
+/* [i] Form Text Field */
+
+#c24 section .layer .input.text {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    padding: 10px 35px 10px 10px;
+    cursor: text;
+}
+
+/* [i] Icons  */
+
+#c24 section .layer .input.text i.fa {
+    position: absolute;
+}
+
+#c24 section .layer .input.text i.fa.fa-calendar {
+    width: 17px;
+    right: 10px;
+    top: 13px;
+    font-size: 17px;
+    color: #005ea8;
+    cursor: pointer;
+}
+
+#c24 section .layer .input.text i.fa.fa-undo {
+    width: 17px;
+    right: 10px;
+    top: 13px;
+    font-size: 17px;
+    color: #005ea8;
+    cursor: pointer;
+}
+
+#c24 section .layer .input.text i.fa.fa-undo.hidden {
+    visibility: hidden;
+}
+
+/* [i] Hidden Form */
+
+#c24 section .layer input.hidden,
+#c24 section .layer select.hidden {
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    text-indent: 0.01px;
+    text-overflow: ellipsis;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* [c] Hidden FF/IE/.. Dotted Select Border */
+
+select {
+    color: rgba(0,0,0,0);
+    text-shadow: 0 0 0 #000;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+#c24 section .layer select.hidden {
+    cursor: pointer;
+    padding: 0 25px 0 0;
+}
+
+/* [i] Input &  Select -> Hover/Focus */
+
+#c24 section .layer .input.dropdown:hover,
+#c24 section .layer .input.focus {
+    border-color: #5290c2 !important;
+}
+
+/* [i] Buttons */
+
+#c24 a.default,
+#c24 button.default {
+    float: left;
+    font-family: arial, sans-serif;
+    background: #005ea8;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    padding: 12px 5px;
+    font-weight: bold;
+    font-size: 16px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    -webkit-transition: background 0.2s;
+    text-decoration: none;
+}
+
+#c24 a.default:hover,
+#c24 button.default:hover {
+    background: #287fc4;
+}
+
+/* [i] Info Step's */
+
+#c24 #infoSteps {
+    padding: 13px 0;
+    background: #f7faff;
+}
+
+#c24 #infoSteps .ele {
+    float: left;
+    width: 33.333333%;
+}
+
+#c24 #infoSteps .step {
+    background: #ffffff;
+    border: 2px solid #005ea8;
+    border-radius: 45px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-weight: bold;
+    height: 30px;
+    padding: 4px 0 5px 0;
+    width: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#c24 #infoSteps .step.active {
+    background: #005ea8;
+    color: #fff;
+}
+
+#c24 #infoSteps .text {
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#c24 #infoSteps .text.active {
+    color: #005ea8;
+    font-weight: bold;
+}
+
+/* [i] Other */
+
+#c24 .mb5 {
+    margin-bottom: 5px;
+}
+
+#c24 .mb10 {
+    margin-bottom: 10px;
+}
+
+#c24 .mb15 {
+    margin-bottom: 15px;
+}
+
+#c24 .mb20 {
+    margin-bottom: 20px;
+}
+
+#c24 .mb25 {
+    margin-bottom: 25px;
+}
